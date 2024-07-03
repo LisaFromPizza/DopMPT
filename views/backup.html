@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/public/css/main.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <title>DopMPT</title>
+</head>
+<body>
+    <header class="header-outer">
+        <div class="header-inner responsive-wrapper">
+            <div class="header-logo">
+                <img src="/public/logo.svg" alt="DopMPT"/>
+            </div>
+            <nav class="header-navigation">
+                <a href="/views/authorization.html">Войти</a>
+                <a href="/views/profile.html">Профиль</a>
+            </nav>
+        </div>
+    </header>
+    <main class="main">
+        <div class="aside-outer">
+            <div class="aside-inner">
+                <aside class="aside-left">
+                </aside>
+            </div>
+        </div>
+        <div class="container">
+            <div class="left-section" style="margin-left: 0px; margin-top: 0px;">
+                <h1 style="margin-left: 30px; color: #FFA200;">Резервная копия</h1>
+                <p>Резервная копия будет сохраняться в определенное время, укажите его в 24 часовом формате</p>
+                <div class="input-section" style="margin-left: 30px;margin-top: 20px;">
+                    <label for="Hours" style="font-size: 26px; margin-left: 10px;">Часы:</label>
+                    <input type="text" style="font-size: 26px; margin-left: 50px;" id="Hours" name="Hours" required>
+                </div>
+                <div class="input-section" style="margin-left: 30px;margin-top: 20px;">
+                    <label for="Minutes" style="font-size: 26px; margin-left: 10px;">Минуты:</label>
+                    <input type="text" style="font-size: 26px; margin-left: 20px;" id="Minutes" name="Minutes" required>
+                </div>
+                <button class="login-button" id="backupButton" style="margin-left: 0px;" type="button">Установить время</button>
+            </div>
+        </div>
+    </main>
+    <footer class="footer-outer">
+        <div class="footer-inner responsive-wrapper">
+            <h1>Разработано DopMPT © 2024 - Все права защищены</h1>
+        </div>
+    </footer>
+    <script src="/src/backup.js"></script>
+    <script src="/src/menu.js"></script>
+</body>
+</html>

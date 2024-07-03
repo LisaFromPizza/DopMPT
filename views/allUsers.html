@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/public/css/main.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <title>DopMPT</title>
+</head>
+<body>
+    <header class="header-outer">
+        <div class="header-inner responsive-wrapper">
+            <div class="header-logo">
+                <img src="/public/logo.svg" alt="DopMPT"/>
+            </div>
+            <nav class="header-navigation">
+                <a href="/views/authorization.html">Войти</a>
+                <a href="/views/profile.html">Профиль</a>
+            </nav>
+        </div>
+    </header>
+    <main class="main">
+        <div class="aside-outer">
+            <div class="aside-inner">
+                <aside class="aside-left">
+                </aside>
+            </div>
+        </div>
+        <div class="container">
+            <div class="left-section" style="margin-left: 0px; margin-top: 50px;">
+              <h1 style="margin-left: 20%;color: #FFA200;">Пользователи в системе</h1>
+      </div>
+    </div>
+  </div>
+  </div>
+  
+  <div style="margin-top: 50px;" class="admins">
+    
+    <div class="input-section" style=" margin-top: 50px;">
+        <label style="font-size: 20px;" for="userName">Поиск по ФИО пользователя:</label>
+        <input type="text" style="font-size: 26px; margin-left: 30px; border: 1px solid #319aa6b2; border-radius: 12px;" id="userName" name="userName">
+    </div>
+  
+    <div class="appointment-table" style="border: 1px solid #319aa6b2; border-radius: 8px; width: 100%; height: 500px; overflow-x: auto; margin-top: 50px; margin-bottom: 50px; margin-left: -10%;">
+        <table id="usersTable" style="border-spacing: 30px;">
+          <thead>
+            <tr>
+                <th>Фамилия</th>
+                <th>Имя</th>
+                <th>Отчетство</th>
+                <th>Электронная почта</th>
+                <th>Пароль пользователя</th>
+                <th>Роль</th>
+                <th>Доступ</th>
+                <th>Причина блокировки</th>
+              </tr>
+          </thead>
+          <tbody style="overflow-x: auto;  width: 100px; height: 100px;" id="usersTableBody">
+          </tbody>
+        </table>
+      </div>
+      <div class="input-section" style=" margin-top: 50px;" id="Reason_Block_Div">
+        <label style="font-size: 20px;" for="Reason_Block">Причина блокировки:</label>
+        <input class="Reason_Block" type="text" style="font-size: 26px; margin-left: 30px; border: 1px solid #319aa6b2; border-radius: 12px;" id="Reason_Block" name="Reason_Block">
+        <output id="Reason_Block_Count" style="font-size: 26px;"></output>
+        <p>Для блокировки нажмите подвердить у пользователя, которого блокируете</p>
+      </div>
+
+  </div>
+  </div>
+    </div>
+    </main>
+    <footer class="footer-outer">
+        <div class="footer-inner responsive-wrapper">
+            <h1>Разработано DopMPT © 2023 - Все права защищены</h1>
+        </div>
+    </footer>
+    <script src="/src/userAll.js"></script>
+    <script src="/src/menu.js"></script>
+</body>
+</html>

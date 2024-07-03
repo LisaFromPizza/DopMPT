@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/public/css/main.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <meta http-equiv='X-UA-Compatible' content='IE=edge' >
+    <meta name='viewport' content='width=device-width, initial-scale=1' >
+    <meta name='description' content="" >
+    <meta name='author' content="xfakehopex">
+    <link rel='stylesheet' href='/public/css/bootstrap.min.css'> 
+    <link rel='stylesheet' href='/public/css/main.css'> 
+    <title>DopMPT</title>
+</head>
+<body>
+    <header class="header-outer">
+        <div class="header-inner responsive-wrapper">
+            <div class="header-logo">
+                <img src="/public/logo.svg" alt="DopMPT"/>
+            </div>
+            <nav class="header-navigation">
+                <a style="font-size:20px;" href="/views/authorization.html">Войти</a>
+                <a style="font-size:20px;" href="/views/profile.html">Профиль</a>
+            </nav>
+        </div>
+    </header>
+    <main class="main">
+        <div class="aside-outer">
+            <div class="aside-inner">
+                <aside class="aside-left" style="text-decoration: none;">
+                </aside>
+            </div>
+        </div>
+        <div class="centeradd">
+            <label style="font-size:30px; margin-left: 80px; color: #FFA200; margin-top: 20px;">Добавление темы</label>
+                <div class="left-section" style="margin-left: 80px; margin-top: 30px;">
+                        <h2 style="font-size:30px; ">Название</h2>
+                        <p style="font-size:20px;">Выберите название для вашей публикации</p>
+                        <input type="text" style="border: #319aa6b2 1px solid; border-radius: 8px; width: 450px; background-color: #fff; height: 40px; font-size: 20px;" id="Title_Theme" name="Title_Theme">
+                        <output id="outputTheme"></output>
+                        <h3 style="font-size:30px;">Тип темы</h3>
+                        <select class="custom-dropdown" id="TypeTheme_ID" name="TypeTheme_ID" style="font-size: 20px;">
+                            <option value="1">Дисциплина</option>
+                            <option value="2">Вопрос</option>
+                            <option value="3">Тема для обсуждения</option>
+                        </select>
+                        <h3 style="font-size:30px;">Описание</h3>
+                        <p style="font-size:20px;">В описании максимально кратко опишите о чем будет публикация</p>
+                        <textarea id="Description_Theme" style="border: #319aa6b2 1px solid; border-radius: 8px;" name="Description_Theme" rows="5" cols="50" ></textarea>
+                        <output id="outputDesc"></output>
+                        <h3 style="font-size:30px;">Текст</h3>
+                        <p style="font-size:20px;">В тексте можете подробно описать возникший вопрос или тему, которую хотели бы обсудить с другими пользователями</p>
+                        <textarea id="Text_Theme" style="border: #319aa6b2 1px solid; border-radius: 8px;" name="Text_Theme" rows="7" cols="50"></textarea>
+                        <output id="outputText"></output>
+                    <p></p>
+                    <h3>Автор</h3>
+                    <a style="font-size: 20px;" id="User_ID">Вы будете указаны в качестве автора</a>
+                    <h1>Загрузка файлов</h1>
+                    <hr/>
+                    <input type="file" style="display: none" name="uploadFiles" id="uploadFiles" multiple="multiple"/>
+                    <div style="margin-bottom:15px">
+                      <button class="btn btn-primary" style="background-color: #319aa6b2; border-color: #319aa6b2;" id="addFilesButton">Загрузить файл</button>
+                    </div>
+                    <div class="progress">
+                      <div class="progress-bar" id="progress" role="progressbar" style="width: 0%"></div>
+                    </div>
+                    <table class="table" id="files"></table>
+                    <!-- <button type="button" style="width: 150px; margin-top: 20px;" class="button" id="create">Создать</button> -->
+                    <button class="btn btn-primary" id="uploadAllFilesButton" style="margin-left:5px; background-color: #FFA200; border-color: #FFA200;">Создать</button>
+                </div>
+                
+        </div>
+    </main>
+    <footer class="footer-outer">
+        <div class="footer-inner responsive-wrapper">
+            <h1>Разработано DopMPT © 2024 - Все права защищены</h1>
+        </div>
+    </footer>
+    <!-- <script src="/src/themeAddUser.js"></script> -->
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js'></script>
+    <script src='/public/js/bootstrap.min.js'></script>
+    <script type="text/javascript" src='/public/js/image.upload.js'></script>
+    <script src="/src/menu.js"></script>
+</body>
+</html>

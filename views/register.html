@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/public/css/main.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <title>DopMPT</title>
+</head>
+<body>
+    <header class="header-outer">
+        <div class="header-inner responsive-wrapper">
+            <div class="header-logo">
+              <img src="/public/logo.svg" alt="DopMPT"/>
+            </div>
+            <nav class="header-navigation">
+                <a href="/views/authorization.html">Войти</a>
+            </nav>
+        </div>
+    </header>
+    <main class="main">
+        <div class="aside-outer">
+        </div>
+        <div class="container">
+            <div class="left-section" style="margin-left: 0px; margin-top: 0px;">
+              <h1 style="margin-left: 200px;color: #FFA200;">Регистрация
+              </h1>
+              <form id="userForm" onsubmit="submitForm(event)">
+                <div class="input-section" style="margin-left: 30px;margin-top: 20px;">
+                  <label for="Surname_User" style="font-size: 26px; margin-left: 10px;">Фамилия:</label>
+                  <input style="margin-left: 10px;" type="text" id="Surname_User" name="Surname_User" required maxlength="30">
+                </div>
+                <div class="input-section" style="margin-left: 30px;margin-top: 20px;">
+                  <label for="Name_User" style="font-size: 26px; margin-left: 10px;">Имя:</label>
+                  <input style="margin-left: 70px;"  type="text" id="Name_User" name="Name_User" required maxlength="30">
+                </div>
+                <div class="input-section" style="margin-left: 30px; margin-top: 20px;">
+                  <label for="Middle_User" style="font-size: 26px; margin-left: 10px;">Отчество:</label>
+                  <input style="margin-left: 10px;"  type="text" id="Middle_User" name="Middle_User" maxlength="30">
+                </div>
+                <div class="input-section" style="margin-left: 30px;margin-top: 20px;">
+                  <label for="Password_User" style="font-size: 26px; margin-left: 10px;">Пароль:</label>
+                  <input type="password" style="font-size: 26px; margin-left: 30px;" id="Password_User" name="Password_User" required maxlength="30">
+                  <button id="showPasswordButton" style="width: 150px; height: 35px;" class="button">Показать пароль</button>
+                </div>                
+                <div class="input-section" style="margin-left: 30px;margin-top: 20px;">
+                  <label for="Email_User" style="font-size: 26px; margin-left: 10px; margin-top: 20px;">Email:</label>
+                  <input type="email" style="font-size: 26px; margin-left: 55px;" id="Email_User" name="Email_User" required maxlength="50">
+                </div>
+                <div class="input-section" style="margin-left: 30px;margin-top: 20px;">
+                  <label for="Post_ID" style="font-size: 26px; margin-left: 10px;">Роль:</label>
+                  <select class="custom-dropdown" id="Post_ID" name="Post_ID" required style="font-size: 26px; margin-bottom: 50px; margin-top: 20px; margin-left: 60px;">
+                    <option value="2">Преподаватель</option>
+                    <option value="3">Студент</option>
+                  </select>                
+                </div>
+                <input type="text" style="font-size: 26px; margin-left: 55px;" id="Access" name="Access" value="0" hidden>
+                <button class="login-button" style="margin-left: 20px; background-color: #FFA200;" type="submit">Зарегистрироваться</button>
+              </form>
+        </div>
+    </div>
+  
+    </div>
+    </main>
+    <footer class="footer-outer">
+        <div class="footer-inner responsive-wrapper">
+            <h1>Разработано DopMPT © 2024 - Все права защищены</h1>
+        </div>
+    </footer>
+    <script src="/src/registerUser.js"></script>
+</body>
+</html>
